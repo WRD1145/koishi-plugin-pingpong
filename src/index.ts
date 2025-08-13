@@ -1,11 +1,13 @@
-import { Context, Schema } from 'koishi'
+import { Context } from 'koishi'
 
-export const name = 'pingpong'
-
-export interface Config {}
-
-export const Config: Schema<Config> = Schema.object({})
+export const name = 'example'
 
 export function apply(ctx: Context) {
-  // write your plugin here
+  ctx.command('ping')
+  .option('name', '-n <name>')
+  .action(({ options }) => {
+    const name = options.name || '你'; 
+    return `pong!${name}今天看起来很聪明`;
+  });
+   
 }
