@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-pingpong",
   "description": "很没用的插件，输入Ping输出Pong",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "contributors": [
     "WRD1145 1640884306@qq.com"
   ],
